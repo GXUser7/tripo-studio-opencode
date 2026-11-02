@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+test-results/
+playwright-report/
+.auth/
+*storage-state*.json
+*storageState*.json
+opencode-browser/
+opencode-session/
+TripoStudioPlugin/
+Documents/
+.DS_Store
+Thumbs.db

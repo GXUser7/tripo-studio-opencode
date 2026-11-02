@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "tripo": {
+        "type": "local",
+        "command": ["node", "C:/PATH/TO/tripo-studio-opencode/adapter/main.mjs"],
+        "timeout": { "startup": 60000 }
+      }
+    }
+  },
+  "permissions": [
+    { "action": "tripo_tripo_ui_*", "resource": "*", "effect": "deny" },
+    { "action": "tripo_tripo_submit_task", "resource": "*", "effect": "deny" },
+    { "action": "tripo_tripo_run_workflow", "resource": "*", "effect": "deny" },
+    { "action": "tripo_tripo_open_workbench", "resource": "*", "effect": "deny" }
+  ]
+}
